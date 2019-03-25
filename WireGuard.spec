@@ -4,9 +4,9 @@
 #
 Name     : WireGuard
 Version  : 0.0.20190123
-Release  : 3
-URL      : https://git.zx2c4.com/WireGuard/snapshot/WireGuard-0.0.20190123.tar.xz
-Source0  : https://git.zx2c4.com/WireGuard/snapshot/WireGuard-0.0.20190123.tar.xz
+Release  : 4
+URL      : https://git.zx2c4.com/WireGuard/snapshot/WireGuard-0.0.20190227.tar.xz
+Source0  : https://git.zx2c4.com/WireGuard/snapshot/WireGuard-0.0.20190227.tar.xz
 Summary  : No detailed summary available
 Group    : Development/Tools
 License  : GPL-2.0
@@ -68,7 +68,7 @@ man components for the WireGuard package.
 
 
 %prep
-%setup -q -n WireGuard-0.0.20190123
+%setup -q -n WireGuard-0.0.20190227
 
 %build
 export http_proxy=http://127.0.0.1:9/
