@@ -4,7 +4,7 @@
 #
 Name     : WireGuard
 Version  : 1.0.20210914
-Release  : 13
+Release  : 14
 URL      : https://git.zx2c4.com/wireguard-tools/snapshot/wireguard-tools-1.0.20210914.tar.xz
 Source0  : https://git.zx2c4.com/wireguard-tools/snapshot/wireguard-tools-1.0.20210914.tar.xz
 Summary  : No detailed summary available
@@ -15,7 +15,6 @@ Requires: WireGuard-data = %{version}-%{release}
 Requires: WireGuard-license = %{version}-%{release}
 Requires: WireGuard-man = %{version}-%{release}
 Requires: WireGuard-services = %{version}-%{release}
-BuildRequires : buildreq-golang
 BuildRequires : buildreq-qmake
 
 %description
@@ -75,7 +74,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1631637430
+export SOURCE_DATE_EPOCH=1647627989
 export GCC_IGNORE_WERROR=1
 export CFLAGS="$CFLAGS -fno-lto "
 export FCFLAGS="$FFLAGS -fno-lto "
@@ -87,7 +86,7 @@ popd
 
 
 %install
-export SOURCE_DATE_EPOCH=1631637430
+export SOURCE_DATE_EPOCH=1647627989
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/package-licenses/WireGuard
 cp %{_builddir}/wireguard-tools-1.0.20210914/COPYING %{buildroot}/usr/share/package-licenses/WireGuard/4cc77b90af91e615a64ae04893fdffa7939db84c
